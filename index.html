@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="main">
+        <div class="profile">
+          <div class="profile__data">
+            <div class="profile__img">
+              <img src="images/image-jeremy.png" alt="" />
+            </div>
+            <div class="profile__name">
+              <span>Report for</span>
+              <h2>Jeremy Robson</h2>
+            </div>
+          </div>
+          <div class="profile__switch">
+            <button class="btn--daily">Daily</button>
+            <button class="btn--weekly">Weekly</button>
+            <button class="btn--monthly">Monthly</button>
+          </div>
+        </div>
+
+        <div class="cards-wrapper cards-wrapper--1">
+          <div class="cards card--1">
+            <div class="cards__title">
+              <div class="cards__title--name">Work</div>
+              <div class="dots">...</div>
+            </div>
+            <div data-time="0" class="daily time">
+              <div class="daily__hours">5hrs</div>
+              <div class="daily__hours--prev">Previous - 7hrs</div>
+            </div>
+            <div data-time="1" class="weekly time">
+              <div class="weekly__hours">32hrs</div>
+              <div class="weekly__hours--prev">Previous - 36hrs</div>
+            </div>
+            <div data-time="2" class="monthly time">
+              <div class="monthly__hours">103hrs</div>
+              <div class="monthly__hours--prev">Previous - 128hrs</div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-wrapper cards-wrapper--2">
+          <div class="cards card--2">
+            <div class="cards__title">
+              <div class="cards__title--name">Play</div>
+              <div class="dots">...</div>
+            </div>
+            <div data-time="0" class="daily time">
+              <div class="daily__hours">1hr</div>
+              <div class="daily__hours--prev">Previous - 2hrs</div>
+            </div>
+            <div data-time="1" class="weekly time">
+              <div class="weekly__hours">10hrs</div>
+              <div class="weekly__hours--prev">Previous - 8hrs</div>
+            </div>
+            <div data-time="2" class="monthly time">
+              <div class="monthly__hours">23hrs</div>
+              <div class="monthly__hours--prev">Previous - 29hrs</div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-wrapper cards-wrapper--3">
+          <div class="cards card--3">
+            <div class="cards__title">
+              <div class="cards__title--name">Study</div>
+              <div class="dots">...</div>
+            </div>
+            <div data-time="0" class="daily time">
+              <div class="daily__hours">0hr</div>
+              <div class="daily__hours--prev">Previous - 1hrs</div>
+            </div>
+            <div data-time="1" class="weekly time">
+              <div class="weekly__hours">4hrs</div>
+              <div class="weekly__hours--prev">Previous - 7hrs</div>
+            </div>
+            <div data-time="2" class="monthly time">
+              <div class="monthly__hours">13hrs</div>
+              <div class="monthly__hours--prev">Previous - 19hrs</div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-wrapper cards-wrapper--4">
+          <div class="cards card--4">
+            <div class="cards__title">
+              <div class="cards__title--name">Exercise</div>
+              <div class="dots">...</div>
+            </div>
+            <div data-time="0" class="daily time">
+              <div class="daily__hours">1hr</div>
+              <div class="daily__hours--prev">Previous - 1hrs</div>
+            </div>
+            <div data-time="1" class="weekly time">
+              <div class="weekly__hours">4hrs</div>
+              <div class="weekly__hours--prev">Previous - 5hrs</div>
+            </div>
+            <div data-time="2" class="monthly time">
+              <div class="monthly__hours">11hrs</div>
+              <div class="monthly__hours--prev">Previous - 18hrs</div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-wrapper cards-wrapper--5">
+          <div class="cards card--5">
+            <div class="cards__title">
+              <div class="cards__title--name">Social</div>
+              <div class="dots">...</div>
+            </div>
+            <div data-time="0" class="daily time">
+              <div class="daily__hours">1hr</div>
+              <div class="daily__hours--prev">Previous - 3hrs</div>
+            </div>
+            <div data-time="1" class="weekly time">
+              <div class="weekly__hours">5hrs</div>
+              <div class="weekly__hours--prev">Previous - 10hrs</div>
+            </div>
+            <div data-time="2" class="monthly time">
+              <div class="monthly__hours">21hrs</div>
+              <div class="monthly__hours--prev">Previous - 23hrs</div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-wrapper cards-wrapper--6">
+          <div class="cards card--6">
+            <div class="cards__title">
+              <div class="cards__title--name">Self Care</div>
+              <div class="dots">...</div>
+            </div>
+            <div data-time="0" class="daily time">
+              <div class="daily__hours">0hr</div>
+              <div class="daily__hours--prev">Previous - 1hrs</div>
+            </div>
+            <div data-time="1" class="weekly time">
+              <div class="weekly__hours">2hrs</div>
+              <div class="weekly__hours--prev">Previous - 2hrs</div>
+            </div>
+            <div data-time="2" class="monthly time">
+              <div class="monthly__hours">7hrs</div>
+              <div class="monthly__hours--prev">Previous - 11hrs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
